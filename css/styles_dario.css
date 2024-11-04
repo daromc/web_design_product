@@ -1,0 +1,369 @@
+:root {
+	--lightblue: #72a9cc;
+	--darkblue: #34576d;
+	--rose: #9c7474;
+	--white: #EEEEEE;
+	--lightgreen: #787760;
+	--lightgren_1: #62705C;
+	--lightgren_2: #4D685B;
+	--lightgren_3: #3B5E5C;
+	--lightgren_4: #31545C;
+	--lightgren_5: #2F4858;
+}
+html, body{
+	width: 100%;
+	height: 100%;
+	margin:0;
+	/* background-color:#00191F; */
+	
+}
+
+/* Here start the header part */
+.bg-colored{
+	background-color: rgb(52, 87, 106, 0.5);
+	color: var(--white);
+	position: fixed;
+	z-index: 99;
+	top:0;
+	width: 100%;
+}
+.container{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	overflow:hidden;
+	text-align: center;
+	width: 95%;
+	
+}
+
+ul {
+	margin:0;
+	padding:0;
+}
+header {
+	border-bottom: 3px solid #34576d;
+	padding: 15px 0;
+}
+header a {
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1rem;
+}
+header li {
+	padding: 0 20px;
+}
+header h1 {
+	margin:0;
+	font-weight: normal;
+}
+header h1 .highlight, 
+header .current a {
+	color: #34576d;
+	text-shadow: 2px 2px 5px white;
+}
+header nav {
+	margin-left: auto;
+	margin-right:auto;
+}
+header nav ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin:0;
+	padding=0;
+}
+nav a:hover {
+	color:#34576d;
+	text-shadow: 2px 2px 5px white;
+}
+/* Here Fhinish the header part */
+
+/* Video Part */
+#first{
+	width: 100%;
+	height: 100vh;
+}
+#myVideo_{
+	position: fixed;
+	width:100%;
+	height:100vh;
+	object-fit: cover;
+	z-index:-1;
+}
+
+#text_1 {
+	margin: 0;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	z-index: 1;
+	color: #EEEEEE;
+	font-size: 1rem;
+	text-shadow: 2px 2px 5px #34576d;
+}
+
+/* Video end*/
+
+/* Boxes end*/
+
+section#boxes{
+	width: auto;
+	height: auto;
+	background-color: #00191F;
+	
+}
+section#boxes .box{
+	padding: 20px;
+	text-align: center;
+	color: var(--white);
+	font-size: 1rem;
+	margin-top: 10%;
+}
+section#boxes .box img {
+	width: 300px;
+}
+
+/* Boxes end*/
+
+/* History start*/
+
+#third {
+	background-image: url("../images/background-2.jpg"); 
+	background-image: fixed;
+	margin: auto;
+	width: 100%;
+	height: 100vh;
+}
+h2 {
+	text-align: center;
+	font-size: 3rem;
+	color: var(--white);
+	text-shadow: 2px 2px 5px #34576d;
+	
+}
+#third .history{
+	text-align: justify;
+	font-size: 1.2rem;
+	color: var(--white);
+	
+}
+.container-third {
+	background-color: rgb(16,16,16, 0.5);
+	width: 80%;
+	height: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: 12%;
+}
+
+/* History end*/
+
+/* last part form */
+#last{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	/* filter: blur(1px); */
+}
+	
+form#myform{
+	backdrop-filter: blur(4px);
+}
+#myform{
+	background-color: rgb(238,238,238, 0.1);
+	text-shadow: 2px 2px 5px #34576d;
+	color: var(--white);
+	width:40%;
+	height: 40%;
+	position: absolute;
+	top: 25%;
+	left: 30%;
+	text-align: center;
+	border-radius: 20px;
+	transition: width 2s, height 2s, background 2s;
+	z-index: 1;
+}
+#myform:hover{
+	background-color: rgb(238,238,238, 0.3);
+	width:45%;
+	height: 45%;
+}
+.form_name{
+	align-items: center;
+	
+}
+
+input[type="text"]{
+  width: 44%;
+  padding: 1%;
+  margin: 2%;
+  border-radius: 10px;
+}
+input[type="email"]{
+  width: 44%;
+  padding: 1%;
+  margin: 2%;
+  border-radius: 10px;
+
+}
+
+#btn {
+	padding: 1%;
+	font-size: 1.5em;
+	background-color: var(--darkblue);
+	color: var(--white);
+	text-shadow: 2px 2px 5px darkblue;
+	margin-left: auto;
+	margin-right: auto;
+	margin:2%;
+	width: 15%;
+	height: 15%;
+	transition: background 2s width 3s;
+	border-radius: 10px;
+	filter: normal;
+
+}
+#btn:hover {
+	background: var(--lightgreen);
+	width : 20%;
+
+}
+#myVideo2{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:100%;
+	height: 99%;
+	z-index: -1000;
+	filter: blur(5px);
+}
+/* last part form ends */
+
+/* Media Querie Start 821px*/
+@media (min-width: 865px){
+	
+	.container {
+		flex-direction:row;
+	}
+	
+	/* here */
+	#text_1 {
+		font-size: 1.5rem;
+		top: 50%;
+	}
+	section#boxes{
+		width: 100%;
+		height: 100vh;
+	}
+	#third {
+		width: 100%;
+		height: 100vh;
+	}
+	#third .history{
+		font-size: 1.5rem;
+	}
+	section#boxes .box{
+		
+		font-size: 1.2rem;
+	}
+	
+}
+/* reset the header containr so that our mobile menu can go full width */
+header .container { width: 100%; }
+header .container #branding { width: 80%; }
+
+/* mobile menu needs to go full width, and be aligned center */
+nav {
+    text-align: center;
+    line-height: 70px;
+    width: 100%;
+}
+
+/* menu should be hidden on mobile */
+header nav ul {
+    display: none;
+}
+
+/* make the mobile menu have a bottom border (as they will be arranged vertically) */
+nav ul a {
+    display: block;
+    border-top: 1px solid #EAEAEB;
+    margin: 0;
+}
+
+/* hide the checkbox element that stores the state of the menu */
+#toggle {
+    display: none;
+}
+
+/* if the toggle checkbox is checked, show the menu (ul) */
+#toggle:checked ~ ul {
+    display: block;
+}
+
+/* override the padding that was applied in Lab 06 */
+header li { padding: 0px; }
+
+/* suck up the bottom of the <header> by 15px, so it looks like the menu doesn't have extra margin */
+header nav ul { margin-bottom: -15px; }
+
+/* style the hamburger element */
+nav label {
+    font-size: 26px; 
+}
+
+/* set the styles for the non-mobile menu */
+@media only screen and (min-width: 865px) {
+
+    /* make the nav block size automatically rather than 100% */
+    nav { width: auto;  }
+    nav label  { display: none; }
+	
+    /* snug the nav bar up to the right edge */
+    header nav { margin-right: 0px; }
+
+    /* make the menu horizontal again */
+    header nav ul { 
+        display: flex;
+        flex-direction: row; 
+    }
+
+    /* undo the mobile menu styling */
+    nav ul a {
+        border-top: 0px;
+        margin: 0;
+        padding: 0 10px; /* need to have only a bit of padding for small tablets in portrait mode */
+    }
+
+    header nav ul { margin-bottom: 0px; }
+
+    /* expand out the header to almost full width */
+    header .container { width: 95%; }
+    header .container #branding { width: auto; }
+    
+	
+}    
+
+@media only screen and (min-width: 1000px) {
+    /* add some more padding for links on large tablets/desktop */
+    nav ul a {
+        padding: 0 20px;
+    }
+
+    /* restore the header container width */
+    header .container { width: 85%; }
+	
+	
+}
+
+@media only screen and (min-width: 415) {
+	
+}
